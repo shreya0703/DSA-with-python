@@ -18,14 +18,14 @@ class Solution:
         n = len(bloomDay)
         if n<m*k:
             return -1
-        mini = float('inf')
-        maxi = float('-inf')
-        for i in range(n):
-            mini = min(mini , bloomDay[i])
-            maxi = max(maxi , bloomDay[i])
+        #mini = float('inf')
+        #maxi = float('-inf')
+        #for i in range(n):
+            #mini = min(mini , bloomDay[i])
+            #maxi = max(maxi , bloomDay[i])
 
-        low = mini
-        high = maxi
+        low = min(bloomDay)
+        high = max(bloomDay)
         while(low<=high):
             mid = (low+high)//2
 
