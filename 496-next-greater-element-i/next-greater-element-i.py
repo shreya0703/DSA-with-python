@@ -4,7 +4,7 @@ class Solution:
         nge = [-1] * n
         stack = []
 
-        # Process nums2 from right to left
+        
         for i in range(n-1, -1, -1):
             while stack and stack[-1] <= nums2[i]:
                 stack.pop()
