@@ -8,7 +8,15 @@ class Solution:
                 st.pop()
             if(i<n):
                 if st:
-                    nge[i] = st[-1]
+                    nge[i] = st[-1] 
+
             st.append(nums[i%n])
         return nge
         
+
+
+
+
+
+
+
